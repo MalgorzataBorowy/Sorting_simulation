@@ -9,4 +9,4 @@ The app was written using C# and Windows Forms (Microsoft .NET Framework).
 For download this app click here.
 
 ## Screenshots
-![window](/window.jpg)
+![window](Sorting/rm/window.jpg)
