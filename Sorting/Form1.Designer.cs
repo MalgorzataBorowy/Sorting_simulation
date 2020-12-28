@@ -105,7 +105,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chart);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sorting algorithms";
             ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
 
