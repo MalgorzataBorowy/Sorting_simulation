@@ -68,6 +68,20 @@ namespace Sorting
             semaphoreObject.Release();
         }
 
+        private void btnInsertSort_Click(object sender, EventArgs e)
+        {
+            semaphoreObject.WaitOne();
+            Sorting.InsertSort(array, array.Length, Visualize);
+            semaphoreObject.Release();
+        }
+
+        private void btnSelectionSort_Click(object sender, EventArgs e)
+        {
+            semaphoreObject.WaitOne();
+            Sorting.SelectionSort(array, array.Length, Visualize);
+            semaphoreObject.Release();
+        }
+
         private void btnReset_Click(object sender, EventArgs e)
         {        
             Random rnd = new Random();

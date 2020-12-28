@@ -98,5 +98,36 @@ namespace Sorting
             return input.ToArray();
         }
 
+        public static void InsertSort(int[] a, int length, Action<int[]> Visualize)
+        {
+            int i, j, value;
+
+            for (i = 1; i < length; ++i)
+            {
+                value = a[i];
+                for (j = i - 1; j >= 0 && a[j] > value; --j)
+                {
+                    a[j + 1] = a[j];
+                }
+                a[j + 1] = value;
+                Visualize(a);
+            }
+        }
+
+        public static void SelectionSort(int[] t, int n, Action<int[]> Visualize)
+        {
+            int i, j, k;
+            for (i = 0; i < n; i++)
+            {
+                k = i;
+                for (j = i + 1; j < n; j++) if (t[j] < t[k]) k = j;
+
+                int temp = t[k];
+                t[k] = t[i];
+                t[i] = temp;
+
+                Visualize(t);
+            }
+        }
     }
 }
